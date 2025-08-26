@@ -19,9 +19,8 @@ This project demonstrates a combination of **secure access, RTC-based automation
 - 📋 **Message Management** – Enable/disable predefined messages.  
 - 🌡️ **Temperature Display** – Shows real-time room temperature when idle.  
 - 💡 **LED Indicators** –  
-  - Green: Active scheduled message  
-  - Red: Idle mode  
-- 🔊 **Buzzer Alerts** for notifications.   
+  - Green: Active scheduled message.  
+  - Red: Idle mode .   
 
 ---
 
@@ -30,8 +29,7 @@ This project demonstrates a combination of **secure access, RTC-based automation
 - **16x2 LCD Display**  
 - **Keypad**  
 - **LEDs (Red/Green)**  
-- **LM35 Temperature Sensor**  
-- **Buzzer**  
+- **LM35 Temperature Sensor**   
 
 ---
 
