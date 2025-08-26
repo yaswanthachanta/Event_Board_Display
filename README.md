@@ -21,13 +21,7 @@ This project demonstrates a combination of **secure access, RTC-based automation
 - 💡 **LED Indicators** –  
   - Green: Active scheduled message  
   - Red: Idle mode  
-- 🔊 **Buzzer Alerts** for notifications.  
-
----
-
-## 🔲 Block Diagram  
-
-![Block Diagram](assets/block_diagram.png)  
+- 🔊 **Buzzer Alerts** for notifications.   
 
 ---
 
@@ -56,6 +50,3 @@ This project demonstrates a combination of **secure access, RTC-based automation
 5. Admins can press a switch → enter **password-protected mode** → update RTC time or enable/disable specific messages.  
 
 ---
-
-## 📂 Example Message List  
-```c
