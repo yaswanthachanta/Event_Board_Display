@@ -13,6 +13,11 @@ This project demonstrates a combination of **secure access, RTC-based automation
 
 ---
 
+## 🖼️ Block Diagram    
+![Block Diagram](block_diagram.png)
+ 
+---
+
 ## 🎯 Features  
 - ⏰ **RTC-based Scheduling** – Messages appear automatically at set times.  
 - 🔑 **Admin Mode** – Secure access using external switch + password.  
@@ -47,5 +52,28 @@ This project demonstrates a combination of **secure access, RTC-based automation
 4. If no active message → show **RTC time + Room Temperature** + Red LED ON.  
 5. Admins can press a switch → enter **password-protected mode** → update RTC time or enable/disable specific messages.  
 
+---
+
+## 📂 Project File Structure & Descriptions
+
+    |-- Event_Board_Main.c         # Main program file – contains main() function, integrates LCD, keypad, RTC, ADC, and settings modules
+    |
+    |--lcd.c / lcd.h               # LCD driver – initialization, sending commands/data, displaying characters, strings, integers on the LCD  
+    |
+    |--kpm.c / kpm.h               # Keypad driver – initialization, scanning columns/rows, detecting key press, reading numeric and password inputs  
+    |
+    |-- adc.c / adc.h              # ADC module – initialization, reading analog values (LM35 temperature sensor), returning digital values
+    |
+    |-- rtc.c / rtc.h              # RTC module – initialization of clock, setting/retrieving current time/date, displaying on LCD
+    |  
+    |-- settings.c / settings.h    # Settings handler – edit/update time/date, manage stored values, save changes via keypad  
+    |  
+    |-- delay.c / delay.h          # Delay utilities – software delay functions (ms/sec), used in LCD and keypad operations  
+    |  
+    |-- pin_connect_block.c / .h   # Pin configuration – configures microcontroller pins for LCD, keypad, ADC, RTC  
+    |  
+    |-- defines.h / types.h /  
+    |   interrupts_defines.h       # Common headers – macros, type definitions, and interrupt vectors shared across modules 
+    
 ---
 
